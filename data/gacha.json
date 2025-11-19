@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "nama": "🐯 Macan Jatim Legendary",
+      "rarity": "legendary",
+      "deskripsi": "Simbol keberanian wong Jatim"
+    },
+    {
+      "id": 2,
+      "nama": "👑 Mahkota Majapahit",
+      "rarity": "legendary",
+      "deskripsi": "Mahkota kerajaan terbesar Nusantara"
+    },
+    {
+      "id": 3,
+      "nama": "🌋 Blue Fire Ijen",
+      "rarity": "legendary",
+      "deskripsi": "Api biru langka dari Kawah Ijen"
+    },
+    {
+      "id": 4,
+      "nama": "🎭 Reog Ponorogo",
+      "rarity": "ultra rare",
+      "deskripsi": "Topeng dadak merak Ponorogo"
+    },
+    {
+      "id": 5,
+      "nama": "💃 Tari Gandrung",
+      "rarity": "ultra rare",
+      "deskripsi": "Tari penyambutan Banyuwangi"
+    },
+    {
+      "id": 6,
+      "nama": "🌉 Jembatan Suramadu",
+      "rarity": "ultra rare",
+      "deskripsi": "Jembatan terpanjang di Indonesia"
+    },
+    {
+      "id": 7,
+      "nama": "🏛️ Candi Bajang Ratu",
+      "rarity": "ultra rare",
+      "deskripsi": "Candi peninggalan Majapahit"
+    },
+    {
+      "id": 8,
+      "nama": "🎪 Karapan Sapi",
+      "rarity": "ultra rare",
+      "deskripsi": "Balapan sapi tradisional Madura"
+    },
+    {
+      "id": 9,
+      "nama": "🥘 Rawon Legendaris",
+      "rarity": "epic",
+      "deskripsi": "Kuah hitam khas dengan bumbu keluwek"
+    },
+    {
+      "id": 10,
+      "nama": "🐂 Surabaya Spirit",
+      "rarity": "epic",
+      "deskripsi": "Semangat arek Suroboyo"
+    },
+    {
+      "id": 11,
+      "nama": "🌋 Gunung Bromo",
+      "rarity": "epic",
+      "deskripsi": "Gunung berapi aktif yang mistis"
+    },
+    {
+      "id": 12,
+      "nama": "🎨 Batik Madura",
+      "rarity": "epic",
+      "deskripsi": "Batik dengan warna cerah khas Madura"
+    },
+    {
+      "id": 13,
+      "nama": "🌄 Air Terjun Tumpak Sewu",
+      "rarity": "epic",
+      "deskripsi": "Air terjun cantik di Lumajang"
+    },
+    {
+      "id": 14,
+      "nama": "🎵 Gamelan Jawa",
+      "rarity": "epic",
+      "deskripsi": "Alat musik tradisional Jawa"
+    },
+    {
+      "id": 15,
+      "nama": "🏭 Pabrik Semen Gresik",
+      "rarity": "epic",
+      "deskripsi": "Industri semen terbesar"
+    },
+    {
+      "id": 16,
+      "nama": "🎡 Jawa Timur Park",
+      "rarity": "epic",
+      "deskripsi": "Taman hiburan di Kota Batu"
+    },
+    {
+      "id": 17,
+      "nama": "🌾 Kopi Bondowoso",
+      "rarity": "rare",
+      "deskripsi": "Kopi arabika dari lereng Gunung Ijen"
+    },
+    {
+      "id": 18,
+      "nama": "💃 Tari Remo",
+      "rarity": "rare",
+      "deskripsi": "Tari penyambutan tamu agung"
+    },
+    {
+      "id": 19,
+      "nama": "🍶 Anggur Brem",
+      "rarity": "rare",
+      "deskripsi": "Minuman fermentasi khas Madiun"
+    },
+    {
+      "id": 20,
+      "nama": "🏺 Gerabah Dinoyo",
+      "rarity": "rare",
+      "deskripsi": "Gerabah khas Malang"
+    },
+    {
+      "id": 21,
+      "nama": "🎭 Topeng Malang",
+      "rarity": "rare",
+      "deskripsi": "Topeng kayu khas Malang"
+    },
+    {
+      "id": 22,
+      "nama": "🍬 Gula Merah Madura",
+      "rarity": "rare",
+      "deskripsi": "Gula aren khas Pulau Madura"
+    },
+    {
+      "id": 23,
+      "nama": "☕ Kopi Lanang",
+      "rarity": "rare",
+      "deskripsi": "Kopi biji tunggal khas Jatim"
+    },
+    {
+      "id": 24,
+      "nama": "🍎 Apel Malang",
+      "rarity": "rare",
+      "deskripsi": "Buah apel segar dari Kota Malang"
+    },
+    {
+      "id": 25,
+      "nama": "🛵 Bebek Madura",
+      "rarity": "common",
+      "deskripsi": "Motor bebek kesayangan wong Madura"
+    },
+    {
+      "id": 26,
+      "nama": "🍜 Soto Lamongan",
+      "rarity": "common",
+      "deskripsi": "Soto ayam dengan koya khas Lamongan"
+    },
+    {
+      "id": 27,
+      "nama": "🍢 Sate Madura",
+      "rarity": "common",
+      "deskripsi": "Sate daging dengan bumbu kacang"
+    },
+    {
+      "id": 28,
+      "nama": "🍚 Nasi Pecel",
+      "rarity": "common",
+      "deskripsi": "Nasi dengan sayuran dan bumbu kacang"
+    },
+    {
+      "id": 29,
+      "nama": "☕ Wedang Jahe",
+      "rarity": "common",
+      "deskripsi": "Minuman hangat jahe khas Jatim"
+    },
+    {
+      "id": 30,
+      "nama": "🥬 Pecel Madiun",
+      "rarity": "common",
+      "deskripsi": "Salad sayur dengan bumbu kacang"
+    }
+  ]
+}

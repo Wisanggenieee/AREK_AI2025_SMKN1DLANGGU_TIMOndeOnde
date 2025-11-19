@@ -1,0 +1,15 @@
+{
+  "Player": {
+    "nama": "Player",
+    "asal": "mojokerto",
+    "skor_kuis": 0,
+    "koleksi_gacha": [],
+    "progress_petualangan": {
+      "status": "belum_mulai",
+      "ending": null
+    },
+    "history_kuis": [],
+    "tanggal_daftar": "2025-11-19 14:04:40",
+    "total_play_time": 0
+  }
+}
