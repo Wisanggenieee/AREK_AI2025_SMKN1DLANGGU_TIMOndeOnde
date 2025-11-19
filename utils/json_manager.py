@@ -33,7 +33,7 @@ class JSONManager:
         return None
 
     def create_quiz_data(self):
-        """50 Pertanyaan tentang Jawa Timur"""
+        """50 Pertanyaan tentang Jawa Timur dengan jawaban yang variatif"""
         return {
             "pertanyaan": [
                 # SEJARAH & TOKOH (10 pertanyaan)
@@ -43,53 +43,53 @@ class JSONManager:
                 },
                 {
                     "id": 2, "pertanyaan": "Siapa pahlawan dari Jatim yang terkenal dengan sebutan 'Bung Tomo'?",
-                    "pilihan": ["Sutomo", "Soekarno", "Hatta", "Sudirman"], "jawaban_benar": 0
+                    "pilihan": ["Soekarno", "Sutomo", "Hatta", "Sudirman"], "jawaban_benar": 1
                 },
                 {
                     "id": 3, "pertanyaan": "Kerajaan Hindu-Buddha terbesar di Jawa Timur adalah?",
-                    "pilihan": ["Majapahit", "Singasari", "Kediri", "Kahuripan"], "jawaban_benar": 0
+                    "pilihan": ["Singasari", "Majapahit", "Kediri", "Kahuripan"], "jawaban_benar": 1
                 },
                 {
                     "id": 4, "pertanyaan": "Candi peninggalan Majapahit yang terkenal di Trowulan?",
-                    "pilihan": ["Candi Bajang Ratu", "Candi Borobudur", "Candi Prambanan", "Candi Sewu"], "jawaban_benar": 0
+                    "pilihan": ["Candi Borobudur", "Candi Prambanan", "Candi Bajang Ratu", "Candi Sewu"], "jawaban_benar": 2
                 },
                 {
                     "id": 5, "pertanyaan": "Raja terbesar Kerajaan Majapahit adalah?",
-                    "pilihan": ["Hayam Wuruk", "Raden Wijaya", "Jayanegara", "Tribhuwana"], "jawaban_benar": 0
+                    "pilihan": ["Raden Wijaya", "Jayanegara", "Hayam Wuruk", "Tribhuwana"], "jawaban_benar": 2
                 },
                 {
                     "id": 6, "pertanyaan": "Peristiwa 10 November 1945 terjadi di kota?",
-                    "pilihan": ["Surabaya", "Malang", "Sidoarjo", "Gresik"], "jawaban_benar": 0
+                    "pilihan": ["Malang", "Sidoarjo", "Surabaya", "Gresik"], "jawaban_benar": 2
                 },
                 {
                     "id": 7, "pertanyaan": "Pahlawan nasional dari Blitar yang proklamator kemerdekaan?",
-                    "pilihan": ["Soekarno", "Hatta", "Sudirman", "Kartini"], "jawaban_benar": 0
+                    "pilihan": ["Hatta", "Sudirman", "Soekarno", "Kartini"], "jawaban_benar": 2
                 },
                 {
                     "id": 8, "pertanyaan": "Kerajaan sebelum Majapahit yang berpusat di Singosari?",
-                    "pilihan": ["Singasari", "Kediri", "Kahuripan", "Jenggala"], "jawaban_benar": 0
+                    "pilihan": ["Kediri", "Kahuripan", "Singasari", "Jenggala"], "jawaban_benar": 2
                 },
                 {
                     "id": 9, "pertanyaan": "Bandara Internasional Juanda terletak di?",
-                    "pilihan": ["Sidoarjo", "Surabaya", "Malang", "Gresik"], "jawaban_benar": 0
+                    "pilihan": ["Sidoarjo", "Surabaya", "Malang", "Gresik"], "jawaban_benar": 1
                 },
                 {
                     "id": 10, "pertanyaan": "Jembatan terpanjang di Indonesia yang menghubungkan Surabaya-Madura?",
-                    "pilihan": ["Suramadu", "Ampera", "Barito", "Mahakam"], "jawaban_benar": 0
+                    "pilihan": ["Ampera", "Barito", "Suramadu", "Mahakam"], "jawaban_benar": 2
                 },
 
                 # GEOGRAFI & WISATA (15 pertanyaan)
                 {
                     "id": 11, "pertanyaan": "Gunung tertinggi di Jawa Timur?",
-                    "pilihan": ["Semeru", "Bromo", "Arjuno", "Kelud"], "jawaban_benar": 0
+                    "pilihan": ["Bromo", "Semeru", "Arjuno", "Kelud"], "jawaban_benar": 1
                 },
                 {
                     "id": 12, "pertanyaan": "Gunung berapi aktif yang terkenal dengan lautan pasirnya?",
-                    "pilihan": ["Bromo", "Semeru", "Kelud", "Arjuno"], "jawaban_benar": 0
+                    "pilihan": ["Semeru", "Kelud", "Bromo", "Arjuno"], "jawaban_benar": 2
                 },
                 {
                     "id": 13, "pertanyaan": "Kawah dengan blue fire yang terkenal di dunia?",
-                    "pilihan": ["Kawah Ijen", "Kawah Bromo", "Kawah Kelud", "Kawah Arjuno"], "jawaban_benar": 0
+                    "pilihan": ["Kawah Bromo", "Kawah Kelud", "Kawah Ijen", "Kawah Arjuno"], "jawaban_benar": 2
                 },
                 {
                     "id": 14, "pertanyaan": "Kota di Jatim yang dijuluki 'Kota Apel'?",
@@ -97,43 +97,43 @@ class JSONManager:
                 },
                 {
                     "id": 15, "pertanyaan": "Kota di Jatim yang dijuluki 'Kota Angin'?",
-                    "pilihan": ["Probolinggo", "Situbondo", "Banyuwangi", "Lumajang"], "jawaban_benar": 0
+                    "pilihan": ["Situbondo", "Banyuwangi", "Probolinggo", "Lumajang"], "jawaban_benar": 2
                 },
                 {
                     "id": 16, "pertanyaan": "Kota di Jatim yang dijuluki 'Kota Pisang'?",
-                    "pilihan": ["Lumajang", "Jember", "Banyuwangi", "Bondowoso"], "jawaban_benar": 0
+                    "pilihan": ["Jember", "Banyuwangi", "Lumajang", "Bondowoso"], "jawaban_benar": 2
                 },
                 {
                     "id": 17, "pertanyaan": "Kota di Jatim yang dijuluki 'Kota Tape'?",
-                    "pilihan": ["Bondowoso", "Lumajang", "Jember", "Banyuwangi"], "jawaban_benar": 0
+                    "pilihan": ["Lumajang", "Jember", "Banyuwangi", "Bondowoso"], "jawaban_benar": 3
                 },
                 {
                     "id": 18, "pertanyaan": "Wisata alam yang terkenal di Kota Batu?",
-                    "pilihan": ["Jawa Timur Park", "Selecta", "Songgoriti", "Semua benar"], "jawaban_benar": 3
+                    "pilihan": ["Selecta", "Songgoriti", "Jawa Timur Park", "Semua benar"], "jawaban_benar": 3
                 },
                 {
                     "id": 19, "pertanyaan": "Tempat wisata di Banyuwangi yang ada blue fire?",
-                    "pilihan": ["Kawah Ijen", "Teluk Hijau", "Plengkung", "Pulau Merah"], "jawaban_benar": 0
+                    "pilihan": ["Teluk Hijau", "Plengkung", "Kawah Ijen", "Pulau Merah"], "jawaban_benar": 2
                 },
                 {
                     "id": 20, "pertanyaan": "Kebun binatang tertua di Asia Tenggara?",
-                    "pilihan": ["Kebun Binatang Surabaya", "Ragunan", "Gembira Loka", "Taman Safari"], "jawaban_benar": 0
+                    "pilihan": ["Ragunan", "Gembira Loka", "Kebun Binatang Surabaya", "Taman Safari"], "jawaban_benar": 2
                 },
                 {
                     "id": 21, "pertanyaan": "Museum transportasi terbesar di Asia?",
-                    "pilihan": ["Museum Angkut", "Museum Kereta Api", "Museum Dirgantara", "Museum Bahari"], "jawaban_benar": 0
+                    "pilihan": ["Museum Kereta Api", "Museum Dirgantara", "Museum Angkut", "Museum Bahari"], "jawaban_benar": 2
                 },
                 {
                     "id": 22, "pertanyaan": "Pantai yang terkenal di Malang Selatan?",
-                    "pilihan": ["Balekambang", "Sendang Biru", "Ngliyep", "Semua benar"], "jawaban_benar": 3
+                    "pilihan": ["Sendang Biru", "Ngliyep", "Balekambang", "Semua benar"], "jawaban_benar": 3
                 },
                 {
                     "id": 23, "pertanyaan": "Gunung yang menjadi batas Jatim-Jateng?",
-                    "pilihan": ["Lawu", "Wilis", "Kelud", "Arjuno"], "jawaban_benar": 0
+                    "pilihan": ["Wilis", "Kelud", "Lawu", "Arjuno"], "jawaban_benar": 2
                 },
                 {
                     "id": 24, "pertanyaan": "Pulau terbesar di Jatim setelah Pulau Jawa?",
-                    "pilihan": ["Madura", "Bawean", "Kangean", "Raas"], "jawaban_benar": 0
+                    "pilihan": ["Bawean", "Kangean", "Madura", "Raas"], "jawaban_benar": 2
                 },
                 {
                     "id": 25, "pertanyaan": "Taman nasional yang melindungi badak Jawa?",
@@ -143,39 +143,39 @@ class JSONManager:
                 # KULINER (15 pertanyaan)
                 {
                     "id": 26, "pertanyaan": "Makanan khas Jatim yang terbuat dari daging sapi dan kuah hitam?",
-                    "pilihan": ["Rawon", "Soto", "Rujak", "Pecel"], "jawaban_benar": 0
+                    "pilihan": ["Soto", "Rujak", "Rawon", "Pecel"], "jawaban_benar": 2
                 },
                 {
                     "id": 27, "pertanyaan": "Makanan khas Jatim 'Rujak Cingur' berasal dari kota?",
-                    "pilihan": ["Surabaya", "Malang", "Madura", "Banyuwangi"], "jawaban_benar": 0
+                    "pilihan": ["Malang", "Madura", "Banyuwangi", "Surabaya"], "jawaban_benar": 3
                 },
                 {
                     "id": 28, "pertanyaan": "Makanan khas Surabaya berupa lontong dengan tahu, tauge, dan lentho?",
-                    "pilihan": ["Lontong Balap", "Lontong Kikil", "Lontong Opor", "Lontong Sayur"], "jawaban_benar": 0
+                    "pilihan": ["Lontong Kikil", "Lontong Opor", "Lontong Balap", "Lontong Sayur"], "jawaban_benar": 2
                 },
                 {
                     "id": 29, "pertanyaan": "Soto ayam dengan koya khas Lamongan?",
-                    "pilihan": ["Soto Lamongan", "Soto Madura", "Soto Ayam", "Soto Betawi"], "jawaban_benar": 0
+                    "pilihan": ["Soto Madura", "Soto Ayam", "Soto Lamongan", "Soto Betawi"], "jawaban_benar": 2
                 },
                 {
                     "id": 30, "pertanyaan": "Makanan khas Jatim berupa nasi dengan lauk tahu tek?",
-                    "pilihan": ["Nasi Pecel", "Nasi Rawon", "Nasi Campur", "Nasi Tumpang"], "jawaban_benar": 0
+                    "pilihan": ["Nasi Rawon", "Nasi Campur", "Nasi Tumpang", "Nasi Pecel"], "jawaban_benar": 3
                 },
                 {
                     "id": 31, "pertanyaan": "Sate dengan bumbu kacang khas Madura?",
-                    "pilihan": ["Sate Madura", "Sate Ponorogo", "Sate Kelinci", "Sate Ayam"], "jawaban_benar": 0
+                    "pilihan": ["Sate Ponorogo", "Sate Kelinci", "Sate Ayam", "Sate Madura"], "jawaban_benar": 3
                 },
                 {
                     "id": 32, "pertanyaan": "Makanan khas Ponorogo?",
-                    "pilihan": ["Sate Ponorogo", "Gulai Kambing", "Rawon", "Pecel"], "jawaban_benar": 0
+                    "pilihan": ["Gulai Kambing", "Rawon", "Pecel", "Sate Ponorogo"], "jawaban_benar": 3
                 },
                 {
                     "id": 33, "pertanyaan": "Makanan khas Madiun?",
-                    "pilihan": ["Pecel Madiun", "Rawon", "Soto", "Rujak"], "jawaban_benar": 0
+                    "pilihan": ["Rawon", "Soto", "Rujak", "Pecel Madiun"], "jawaban_benar": 3
                 },
                 {
                     "id": 34, "pertanyaan": "Makanan khas Kediri?",
-                    "pilihan": ["Tahu Takwa", "Tahu Gejrot", "Tahu Sumedang", "Tahu Bulat"], "jawaban_benar": 0
+                    "pilihan": ["Tahu Gejrot", "Tahu Sumedang", "Tahu Takwa", "Tahu Bulat"], "jawaban_benar": 2
                 },
                 {
                     "id": 35, "pertanyaan": "Makanan khas Banyuwangi?",
@@ -183,65 +183,65 @@ class JSONManager:
                 },
                 {
                     "id": 36, "pertanyaan": "Makanan khas Bondowoso?",
-                    "pilihan": ["Tape Bondowoso", "Jenang Kudus", "Wingko Babat", "Klepon"], "jawaban_benar": 0
+                    "pilihan": ["Jenang Kudus", "Wingko Babat", "Tape Bondowoso", "Klepon"], "jawaban_benar": 2
                 },
                 {
                     "id": 37, "pertanyaan": "Minuman khas Jatim dari buah kawista?",
-                    "pilihan": ["Legin", "Wedang Ronde", "Bajigur", "Kopi Joss"], "jawaban_benar": 0
+                    "pilihan": ["Wedang Ronde", "Bajigur", "Kopi Joss", "Legin"], "jawaban_benar": 3
                 },
                 {
                     "id": 38, "pertanyaan": "Minuman khas Jatim dari jahe dan gula merah?",
-                    "pilihan": ["Wedang Jahe", "Bajigur", "Bandrek", "Secang"], "jawaban_benar": 0
+                    "pilihan": ["Bajigur", "Bandrek", "Wedang Jahe", "Secang"], "jawaban_benar": 2
                 },
                 {
                     "id": 39, "pertanyaan": "Makanan khas Gresik?",
-                    "pilihan": ["Pudak", "Lumpia", "Pastel", "Lemper"], "jawaban_benar": 0
+                    "pilihan": ["Lumpia", "Pastel", "Pudak", "Lemper"], "jawaban_benar": 2
                 },
                 {
                     "id": 40, "pertanyaan": "Makanan khas Trenggalek?",
-                    "pilihan": ["Lontong", "Kupat", "Lemang", "Lemper"], "jawaban_benar": 0
+                    "pilihan": ["Kupat", "Lemang", "Lemper", "Lontong"], "jawaban_benar": 0
                 },
 
                 # BUDAYA & KESENIAN (10 pertanyaan)
                 {
                     "id": 41, "pertanyaan": "Kesenian Reog berasal dari daerah mana?",
-                    "pilihan": ["Ponorogo", "Surabaya", "Madura", "Banyuwangi"], "jawaban_benar": 0
+                    "pilihan": ["Surabaya", "Madura", "Ponorogo", "Banyuwangi"], "jawaban_benar": 2
                 },
                 {
                     "id": 42, "pertanyaan": "Tari Gandrung berasal dari daerah mana?",
-                    "pilihan": ["Banyuwangi", "Surabaya", "Madura", "Kediri"], "jawaban_benar": 0
+                    "pilihan": ["Surabaya", "Madura", "Kediri", "Banyuwangi"], "jawaban_benar": 3
                 },
                 {
                     "id": 43, "pertanyaan": "Kesenian Ludruk berasal dari daerah mana?",
-                    "pilihan": ["Jombang", "Surabaya", "Lamongan", "Bojonegoro"], "jawaban_benar": 0
+                    "pilihan": ["Surabaya", "Lamongan", "Jombang", "Bojonegoro"], "jawaban_benar": 0
                 },
                 {
                     "id": 44, "pertanyaan": "Tari khas Jatim yang biasanya dibawakan penyambutan tamu?",
-                    "pilihan": ["Tari Remo", "Tari Gandrung", "Tari Ngremo", "Tari Jejer"], "jawaban_benar": 0
+                    "pilihan": ["Tari Gandrung", "Tari Ngremo", "Tari Jejer", "Tari Remo"], "jawaban_benar": 3
                 },
                 {
                     "id": 45, "pertanyaan": "Kesenian Karapan Sapi berasal dari?",
-                    "pilihan": ["Madura", "Surabaya", "Lamongan", "Bojonegoro"], "jawaban_benar": 0
+                    "pilihan": ["Surabaya", "Lamongan", "Madura", "Bojonegoro"], "jawaban_benar": 2
                 },
                 {
                     "id": 46, "pertanyaan": "Upacara adat Suku Tengger di Gunung Bromo?",
-                    "pilihan": ["Yadnya Kasada", "Nyepi", "Galungan", "Kuningan"], "jawaban_benar": 0
+                    "pilihan": ["Nyepi", "Galungan", "Yadnya Kasada", "Kuningan"], "jawaban_benar": 2
                 },
                 {
                     "id": 47, "pertanyaan": "Alat musik tradisional Jawa Timur?",
-                    "pilihan": ["Gamelan", "Angklung", "Sasando", "Kolintang"], "jawaban_benar": 0
+                    "pilihan": ["Angklung", "Sasando", "Kolintang", "Gamelan"], "jawaban_benar": 3
                 },
                 {
                     "id": 48, "pertanyaan": "Festival tahunan yang terkenal di Banyuwangi?",
-                    "pilihan": ["Festival Gandrung Sewu", "Festival Reog", "Festival Ludruk", "Festival Kuda Lumping"], "jawaban_benar": 0
+                    "pilihan": ["Festival Reog", "Festival Ludruk", "Festival Kuda Lumping", "Festival Gandrung Sewu"], "jawaban_benar": 3
                 },
                 {
                     "id": 49, "pertanyaan": "Pakaian adat Jawa Timur?",
-                    "pilihan": ["Pesa'an", "Kebaya", "Batik", "Sarung"], "jawaban_benar": 0
+                    "pilihan": ["Kebaya", "Batik", "Sarung", "Pesa'an"], "jawaban_benar": 3
                 },
                 {
                     "id": 50, "pertanyaan": "Rumah adat Jawa Timur?",
-                    "pilihan": ["Joglo", "Limasan", "Panggung", "Panjang"], "jawaban_benar": 0
+                    "pilihan": ["Limasan", "Panggung", "Panjang", "Joglo"], "jawaban_benar": 3
                 }
             ]
         }
