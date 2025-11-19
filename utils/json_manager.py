@@ -293,269 +293,142 @@ class JSONManager:
         }
 
     def create_petualangan_data(self):
-        """Data petualangan interaktif yang SUPER SERU dengan banyak ending!"""
+        """Data petualangan interaktif yang sudah diperbaiki"""
         return {
             "scenes": {
                 # === AWAL PETUALANGAN ===
                 "start": {
-                    "text": "🌅 PETUALANGAN AREK JATIM 🌅\n\nKowe lagi plesiran nang Trowulan, bekas ibukota Majapahit.\nTiba-tiba nemu peta kuno sing aneh! 🗺️\nPeta iki gambarno menuju harta karun Kerajaan Majapahit!\n\nApa sing arek kowe lakoni?",
+                    "text": "🌅 PETUALANGAN AREK JATIM 🌅\n\nKamu sedang berjalan-jalan di Trowulan, bekas ibukota Majapahit.\nTiba-tiba kamu menemukan peta kuno yang aneh! 🗺️\nPeta ini menunjukkan jalan menuju harta karun Kerajaan Majapahit!\n\nApa yang akan kamu lakukan?",
                     "choices": [
                         {"text": "🚀 Langsung telusuri peta kuno!", "next": "telusuri_peta"},
                         {"text": "🗣️ Tanya warga sekitar dulu", "next": "tanya_warga"},
-                        {"text": "🏛️ Lapor ke museum biar aman", "next": "lapor_museum"},
-                        {"text": "🤫 Diam-diam simpan peta, riset dulu", "next": "riset_diam"}
+                        {"text": "🏛️ Lapor ke museum biar aman", "next": "lapor_museum"}
                     ]
                 },
 
                 # === JALUR TELUSURI PETA ===
                 "telusuri_peta": {
-                    "text": "🛣️ JALUR CEPET: TELUSURI PETA!\n\nKowe nekad mlaku neng dalan sing ditunjuk peta.\nTiba-tiba nemu persimpangan:\n\n1. 🏞️ LEWAT TAMAN PURBAKALA - Konon ada teka-teki kuno\n2. 🌲 LEWAT HUTAN KERAMAT - Ada suara-suara misterius\n3. 🏔️ LEWAT GUNUNG KAWASAN - Jalur terjal tapi cepat",
+                    "text": "🛣️ JALUR CEPET: TELUSURI PETA!\n\nKamu nekad mengikuti jalan yang ditunjuk peta.\nTiba-tiba menemukan persimpangan:",
                     "choices": [
                         {"text": "🏞️ Lewat Taman Purbakala", "next": "taman_purbakala"},
                         {"text": "🌲 Lewat Hutan Keramat", "next": "hutan_keramat"},
-                        {"text": "🏔️ Lewat Gunung Kawasan", "next": "gunung_kawasan"},
-                        {"text": "🔙 Balik ke awal", "next": "start"}
+                        {"text": "🔙 Kembali ke awal", "next": "start"}
                     ]
                 },
 
                 "taman_purbakala": {
-                    "text": "🏺 TAMAN PURBAKALA MISTERIUS\n\nKowe nemu taman purbakala sing sepi.\nOno prasasti kuno sing isine teka-teki:\n\n'Yang mencari harta tanpa ilmu\nBagai keris tanpa warangka'\n\nTiba-tiba ono suara dari balik patung...",
+                    "text": "🏺 TAMAN PURBAKALA MISTERIUS\n\nKamu menemukan taman purbakala yang sepi.\nAda prasasti kuno berisi teka-teki:\n\n'Yang mencari harta tanpa ilmu\nBagai keris tanpa warangka'",
                     "choices": [
                         {"text": "🔍 Periksa prasasti lebih detail", "next": "prasasti_detail"},
-                        {"text": "🏃‍♂️ Cepat minggat, serem!", "next": "minggat_serem"},
-                        {"text": "🗣️ Panggil suara itu", "next": "panggil_suara"}
+                        {"text": "🏃‍♂️ Cepat pergi, serem!", "next": "minggat_serem"}
                     ]
                 },
 
                 "prasasti_detail": {
-                    "text": "🔎 RAHASIA PRASASTI TERBUKA!\n\nKowe nemu simbol rahasia dibalik prasasti!\nSymbol iki nunjukno lokasi gua tersembunyi.\n\nTAPI... ono penjaga taman sing marahi kowe!",
+                    "text": "🔎 RAHASIA PRASASTI TERBUKA!\n\nKamu menemukan simbol rahasia di balik prasasti!\nSymbol ini menunjukkan lokasi gua tersembunyi.",
                     "choices": [
                         {"text": "🤝 Jelaskan tujuan mulia", "next": "good_ending_arkeolog"},
-                        {"text": "💨 Lari bawa simbol!", "next": "chase_sequence"},
-                        {"text": "🎭 Pura-pura turis biasa", "next": "funny_ending_turis"}
+                        {"text": "💨 Lari bawa simbol!", "next": "chase_sequence"}
                     ]
                 },
 
                 # === JALUR TANYA WARGA ===
                 "tanya_warga": {
-                    "text": "👥 JALUR WARGA: TANYA PENDUDUK\n\nKowe nemui sesepuh desa sing bijaksana.\nDheweke cerita:\n\n'Harta karun Majapahit iki dilindungi makhluk gaib.\nOno 3 ujian: Keberanian, Kebijaksanaan, dan Pengorbanan'\n\nDheweke nawani bantuan...",
+                    "text": "👥 JALUR WARGA: TANYA PENDUDUK\n\nKamu menemui sesepuh desa yang bijaksana.\nDia bercerita:\n\n'Harta karun Majapahit ini dilindungi ujian: Keberanian, Kebijaksanaan, dan Pengorbanan'",
                     "choices": [
                         {"text": "💪 Terima tantangan!", "next": "tiga_ujian"},
-                        {"text": "😰 Takut, mending urungkan", "next": "urungkan_takut"},
-                        {"text": "🕵️‍♂️ Minta petunjuk rahasia", "next": "petunjuk_rahasia"}
+                        {"text": "😰 Takut, urungkan saja", "next": "urungkan_takut"}
                     ]
                 },
 
                 "tiga_ujian": {
-                    "text": "⚔️ TIGA UJIAN MAJAPAHIT\n\nSesepuh nuntun kowe nang 3 tempat ujian:\n\n1. 🦁 GUHA MACAN - Uji keberanian\n2. 🧠 TAMAN PUJANGGA - Uji kebijaksanaan  \n3. 💰 RUANG HARTA - Uji pengorbanan",
+                    "text": "⚔️ TIGA UJIAN MAJAPAHIT\n\nSesepuh menuntunmu ke tempat ujian:\nUji keberanian di Guha Macan",
                     "choices": [
-                        {"text": "🦁 Guha Macan dulu", "next": "guha_macan"},
-                        {"text": "🧠 Taman Pujangga dulu", "next": "taman_pujangga"},
-                        {"text": "💰 Ruang Harta dulu", "next": "ruang_harta"}
+                        {"text": "🦁 Masuk Guha Macan", "next": "guha_macan"},
+                        {"text": "🔙 Kembali", "next": "tanya_warga"}
                     ]
                 },
 
                 "guha_macan": {
-                    "text": "🦁 GUHA MACAN - UJI KEBERANIAN\n\nKowe nemu guha gelap.\nDari dalam ono auman macan sing nggeterke!\n\nTapi kowe liat, iki mung patung macan mekanik kuno!\nOno tombol rahasia dibalik patung...",
+                    "text": "🦁 GUHA MACAN - UJI KEBERANIAN\n\nKamu menemukan guha gelap.\nDari dalam ada auman macan yang menakutkan!\n\nTapi kamu lihat, ini hanya patung macan mekanik kuno!\nAda tombol rahasia di balik patung...",
                     "choices": [
                         {"text": "🔼 Pencet tombol atas", "next": "secret_ending_macan"},
-                        {"text": "🔽 Pencet tombol bawah", "next": "bad_ending_jebakan"},
-                        {"text": "🚪 Kabur dari guha", "next": "escape_guha"}
+                        {"text": "🔽 Pencet tombol bawah", "next": "bad_ending_jebakan"}
                     ]
                 },
 
                 # === JALUR MUSEUM ===
                 "lapor_museum": {
-                    "text": "🏛️ JALUR RESMI: LAPOR MUSEUM\n\nKowe ketemu arkeolog muda sing antusias.\nDheweke seneng banget nemu peta kuno!\n\n'Tak bantu analisis peta iki!'\nTernyata peta iki nunjukno situs arkeologi baru!",
+                    "text": "🏛️ JALUR RESMI: LAPOR MUSEUM\n\nKamu ketemu arkeolog muda yang antusias.\nDia senang sekali menemukan peta kuno!\n\n'Tolong bantu analisis peta ini!'",
                     "choices": [
                         {"text": "🤝 Kerjasama ekspedisi", "next": "good_ending_penemu"},
-                        {"text": "💼 Minta imbalan dulu", "next": "bad_ending_serakah"},
-                        {"text": "📸 Dokumentasikan dulu", "next": "funny_ending_foto"}
+                        {"text": "💼 Minta imbalan dulu", "next": "bad_ending_serakah"}
                     ]
                 },
 
-                # === JALUR DIAM-DIAM ===
-                "riset_diam": {
-                    "text": "🕵️‍♂️ JALUR DETEKTIF: RISET DIAM-DIAM\n\nKowe pulang dulu, riset peta kuno iki.\nTernyata peta iki petunjuk menuju 'Perpustakaan Rahasia Majapahit'!\n\nTapi ono kelompok pemburu harta ilegal sing ngincar peta iki!",
-                    "choices": [
-                        {"text": "🔐 Cari perpustakaan rahasia", "next": "perpustakaan_rahasia"},
-                        {"text": "🚔 Lapor polisi", "next": "lapor_polisi"},
-                        {"text": "💸 Jual peta ke kolektor", "next": "bad_ending_pengkhianat"}
-                    ]
-                },
-
-                "perpustakaan_rahasia": {
-                    "text": "📚 PERPUSTAKAAN RAHASIA MAJAPAHIT!\n\nKowe nemu perpustakaan tersembunyi dibawah tanah!\nIsine ribuan naskah kuno sing durung pernah dibuka.\n\nOno 3 buku khusus:\n- Buku Sejarah Rahasia\n- Buku Ilmu Kuno  \n- Buku Ramalan Masa Depan",
-                    "choices": [
-                        {"text": "📖 Baca Sejarah Rahasia", "next": "secret_ending_sejarah"},
-                        {"text": "🔮 Baca Ilmu Kuno", "next": "good_ending_ilmuwan"},
-                        {"text": "🔮 Baca Ramalan Masa Depan", "next": "secret_ending_ramalan"}
-                    ]
-                },
-
-                # === ENDING BAIK ===
+                # === GOOD ENDING ===
                 "good_ending_arkeolog": {
-                    "text": "🎉 ENDING BAIK: AHLI ARKEOLOG!\n\nPenjaga ternyata arkeolog senior!\nDheweke kagum sama ketekunanmu.\n\nKowe diajak kerjasama ekskavasi situs bersejarah.\nJenengmu dicatat dalam sejarah arkeologi Indonesia!\n\n🏆 Pencapaian: Dikenal sebagai Penemu Situs Baru",
+                    "text": "🎉 GOOD ENDING: AHLI ARKEOLOG!\n\nPenjaga ternyata arkeolog senior!\nDia kagum dengan ketekunanmu.\n\nKamu diajak kerjasama ekskavasi situs bersejarah.\nNamamu dicatat dalam sejarah arkeologi Indonesia!",
                     "ending": "Ahli Arkeolog Handal",
                     "type": "good"
                 },
 
                 "good_ending_penemu": {
-                    "text": "🌟 ENDING BAIK: PENEMU SEJATI!\n\nBersama tim arkeolog, kowe nemu situs purbakala penting!\nTernyata 'harta karun' sejati adalah pengetahuan sejarah.\n\nKowe dapat penghargaan dari pemerintah dan diundang\nke berbagai seminar internasional!\n\n🏆 Pencapaian: Dihargai sebagai Penemu Sejati",
+                    "text": "🌟 GOOD ENDING: PENEMU SEJATI!\n\nBersama tim arkeolog, kamu menemukan situs purbakala penting!\nTernyata 'harta karun' sejati adalah pengetahuan sejarah.",
                     "ending": "Penemu Situs Bersejarah",
                     "type": "good"
                 },
 
-                "good_ending_ilmuwan": {
-                    "text": "🔬 ENDING BAIK: ILMUWAN BRILIAN!\n\nDari buku ilmu kuno, kowe nemu ramuan tradisional\nyang bisa menyembuhkan penyakit modern!\n\nKowe jadi ilmuwan terkenal dan membantu banyak orang.\nHarta sejati adalah ilmu yang bermanfaat!\n\n🏆 Pencapaian: Penemu Ramuan Ajaib",
-                    "ending": "Ilmuwan Brilian",
-                    "type": "good"
-                },
-
-                # === ENDING JAHAT ===
+                # === BAD ENDING ===
                 "bad_ending_serakah": {
-                    "text": "💸 ENDING JAHAT: SERAKAH!\n\nKowe minta imbalan besar pada arkeolog.\nTernyata dheweke adalah kolektor barang ilegal!\n\nKowe ditipu dan peta kuno-mu dijual ke pasar gelap.\nKowe dapat uang, tapi kehilangan warisan budaya!\n\n💔 Peringatan: Jangan serakah!",
+                    "text": "💸 BAD ENDING: SERAKAH!\n\nKamu minta imbalan besar pada arkeolog.\nTernyata dia adalah kolektor barang ilegal!\n\nKamu ditipu dan peta kunomu dijual ke pasar gelap.",
                     "ending": "Kolektor Serakah",
                     "type": "bad"
                 },
 
                 "bad_ending_jebakan": {
-                    "text": "🚫 ENDING JAHAT: TERJEBAK!\n\nTombol bawah ternyata memicu jebakan kuno!\nKowe terkunci dalam guha selama 3 hari.\n\nAkhirnya diselamatkan tim penyelamat, tapi\npeta kuno-mu rusak dan harta karun hilang selamanya.\n\n💔 Peringatan: Hati-hati dengan pilihan!",
+                    "text": "🚫 BAD ENDING: TERJEBAK!\n\nTombol bawah ternyata memicu jebakan kuno!\nKamu terkunci dalam guha selama 3 hari.\n\nAkhirnya diselamatkan tim penyelamat.",
                     "ending": "Petualang Terjebak",
                     "type": "bad"
                 },
 
-                "bad_ending_pengkhianat": {
-                    "text": "👿 ENDING JAHAT: PENGKHIANAT!\n\nKowe jual peta ke kolektor gelap.\nTernyata mereka menghancurkan situs bersejarah!\n\nKowe dapat uang banyak, tapi dikutuk masyarakat\nsebagai pengkhianat budaya Jawa Timur!\n\n💔 Peringatan: Hargai warisan leluhur!",
-                    "ending": "Pengkhianat Budaya",
-                    "type": "bad"
-                },
-
-                # === ENDING LUCU ===
-                "funny_ending_turis": {
-                    "text": "😂 ENDING LUCU: TURIS AWAM!\n\nKowe pura-pura jadi turis biasa.\nPenjaga kasih brosur wisata dan ngajak foto.\n\nTernyata kowe jadi model foto promosi wisata Trowulan!\nWajahmu ada di semua brosur turis selama setahun!\n\n📸 Pencapaian: Model Brosur Turis Terkenal",
-                    "ending": "Model Brosur Turis",
-                    "type": "funny"
-                },
-
-                "funny_ending_foto": {
-                    "text": "🤳 ENDING LUCU: FOTO VIRAL!\n\nKowe sibuk dokumentasi buat Instagram.\nTiba-tiba ketiduran di museum karena kecapean.\n\nFoto tidurmu jadi meme viral #NgetripSampaiTidur!\nKowe dapat followers banyak, tapi lupa sama harta karun!\n\n😂 Pencapaian: Selebgram Museum Viral",
-                    "ending": "Selebgram Museum",
-                    "type": "funny"
-                },
-
-                # === ENDING RAHASIA ===
+                # === SECRET ENDING ===
                 "secret_ending_macan": {
-                    "text": "🐯 ENDING RAHASIA: JAGA MACAN!\n\nTombol atas membuka ruang rahasia!\nTernyata 'harta karun' adalah MACAN JATIM LEGENDARY\nyang masih hidup dan terjaga selama 500 tahun!\n\nKowe ditunjuk sebagai penjaga baru macan suci!\nHidupmu berubah total jadi guardian budaya!\n\n🔮 Rahasia: Penjaga Macan Suci",
+                    "text": "🐯 SECRET ENDING: JAGA MACAN!\n\nTombol atas membuka ruang rahasia!\nTernyata 'harta karun' adalah MACAN JATIM LEGENDARY\n yang masih hidup selama 500 tahun!\n\nKamu ditunjuk sebagai penjaga baru macan suci!",
                     "ending": "Penjaga Macan Suci",
                     "type": "secret"
                 },
 
-                "secret_ending_sejarah": {
-                    "text": "📜 ENDING RAHASIA: PENJAGA SEJARAH!\n\nBuku sejarah rahasia berisi catatan lengkap Majapahit.\nKowe menemukan bahwa leluhurmu adalah penasihat raja!\n\nKowe mewarisi tugas menjaga sejarah sejati Jawa Timur.\nHidupmu dipenuhi makna sebagai penjaga warisan!\n\n🔮 Rahasia: Penjaga Sejarah Sejati",
-                    "ending": "Penjaga Sejarah",
-                    "type": "secret"
-                },
-
-                "secret_ending_ramalan": {
-                    "text": "🔮 ENDING RAHASIA: PERAMAL MASA DEPAN!\n\nBuku ramalan menunjukkan masa depan Jawa Timur!\nKowe bisa melihat perkembangan budaya 100 tahun mendatang.\n\nKowe jadi penasihat budaya pemerintah dan membantu\nmelestarikan tradisi untuk generasi mendatang!\n\n🔮 Rahasia: Visioner Budaya",
-                    "ending": "Visioner Budaya",
-                    "type": "secret"
-                },
-
-                # === SCENE TRANSISI ===
+                # === FUNNY ENDING ===
                 "minggat_serem": {
-                    "text": "🏃‍♂️ KOWE MINGGAT NANGIS-NANGIS!\n\nTernyata suara itu cuma kucing liar! 😹\nKowe balik ngomah malu-malu...",
+                    "text": "😂 FUNNY ENDING: PETUALANG PENAKUT!\n\nTernyata suara itu cuma kucing liar! 😹\nKamu pulang dengan malu...",
                     "ending": "Petualang Penakut",
                     "type": "funny"
                 },
 
-                "escape_guha": {
-                    "text": "🚶‍♂️ KOWE KELUAR DENGAN SELAMAT\n\nTapi kowe melewatkan kesempatan besar!\nMungkin lain kali lebih berani...",
-                    "ending": "Petualang Hati-Hati",
-                    "type": "neutral"
-                },
-
                 "urungkan_takut": {
-                    "text": "😴 KOWE URUNGKAN NIAT\n\nKowe balik ngomah, tidur nyenyak.\nMimpi indah tentang harta karun...",
+                    "text": "😴 FUNNY ENDING: PEMIMPI HARTA KARUN!\n\nKamu pulang, tidur nyenyak.\nMimpi indah tentang harta karun...",
                     "ending": "Pemimpi Harta Karun",
-                    "type": "neutral"
-                },
-
-                "lapor_polisi": {
-                    "text": "👮 KOWE LAPOR POLISI\n\nPolisi menangkap kelompok pemburu harta ilegal.\nKowe dapat penghargaan dari kepolisian!",
-                    "ending": "Warga Peduli Hukum",
-                    "type": "good"
+                    "type": "funny"
                 },
 
                 "chase_sequence": {
-                    "text": "🏃‍♂️🏃‍♂️🏃‍♂️ ADU CEPAT!\n\nKowe dikejar penjaga taman!\nTapi kowe lebih cepat dan berhasil kabur!\n\nSayangnya simbol rahasia jatuh dan hilang...",
+                    "text": "🏃‍♂️ FUNNY ENDING: PELARI CEPAT!\n\nKamu dikejar penjaga taman!\nTapi kamu lebih cepat dan berhasil kabur!\n\nSayangnya simbol rahasia jatuh dan hilang...",
                     "ending": "Pelari Cepat Tapi Ceroboh",
                     "type": "funny"
                 },
 
-                "panggil_suara": {
-                    "text": "🗣️ KOWE PANGGIL SUARA ITU\n\nTernyata suara itu dari peneliti muda yang\nsedang riset tentang simbol-simbol kuno!\n\nDiajak kerjasama, kowe nemu banyak temuan baru!",
-                    "ending": "Partner Peneliti Muda",
-                    "type": "good"
-                },
-
-                "petunjuk_rahasia": {
-                    "text": "🤫 KOWE DAPAT PETUNJUK RAHASIA!\n\nSesepuh kasih petunjuk jalan pintas menuju\nruang harta tanpa melalui ujian!\n\nTapi... apakah ini jalan yang benar?",
-                    "choices": [
-                        {"text": "🛣️ Ikuti jalan pintas", "next": "bad_ending_shortcut"},
-                        {"text": "⚔️ Tetap ikuti ujian", "next": "tiga_ujian"}
-                    ]
-                },
-
-                "bad_ending_shortcut": {
-                    "text": "⏩ ENDING JAHAT: JALAN PINTAS!\n\nJalan pintas ternyata jebakan!\nKowe terjebak dalam labirin tanpa akhir.\n\nHarta karun hanya ilusi, yang ada hanya penyesalan!",
-                    "ending": "Pencari Jalan Pintas",
-                    "type": "bad"
-                },
-
-                # === SCENE BARU UNTUK JALUR LAIN ===
                 "hutan_keramat": {
-                    "text": "🌲 HUTAN KERAMAT MISTERIUS\n\nKowe mlaku nang hutan sing angker.\nOno suara gemerisik dan bayangan aneh!\n\nTiba-tiba nemu pondok tua di tengah hutan...",
+                    "text": "🌲 HUTAN KERAMAT MISTERIUS\n\nKamu berjalan di hutan yang angker.\nAda suara gemerisik dan bayangan aneh!\n\nTiba-tiba menemukan pondok tua...",
                     "choices": [
-                        {"text": "🚪 Masuk ke pondok", "next": "pondok_tua"},
-                        {"text": "🌳 Sembunyi di balik pohon", "next": "sembunyi_pohon"},
-                        {"text": "🏃‍♂️ Lari sekencang-kencangnya", "next": "lari_ketakutan"}
-                    ]
-                },
-
-                "pondok_tua": {
-                    "text": "🏚️ PONDOK TUA PENUH MISTERI\n\nDi dalam pondok ono kakek tua bijaksana.\nDheweke ternyata penjaga hutan keramat!\n\n'Mbok menawa kowe pengen harta karun?\nHarta sejati ada dalam dirimu sendiri!'",
-                    "choices": [
-                        {"text": "🙏 Minta petunjuk spiritual", "next": "good_ending_bijaksana"},
-                        {"text": "💸 Tetap minta harta", "next": "bad_ending_materialistis"},
-                        {"text": "📝 Tanya sejarah hutan", "next": "secret_ending_penjaga"}
+                        {"text": "🚪 Masuk ke pondok", "next": "good_ending_bijaksana"},
+                        {"text": "🏃‍♂️ Lari ketakutan", "next": "minggat_serem"}
                     ]
                 },
 
                 "good_ending_bijaksana": {
-                    "text": "🌿 ENDING BAIK: ORANG BIJAKSANA!\n\nKakek ngajarke kowe tentang filosofi hidup Jawa.\nKowe nemu 'harta' dalam kebijaksanaan tradisional.\n\nKowe jadi sesepuh muda yang dihormati masyarakat!\n\n🏆 Pencapaian: Pewaris Kebijaksanaan",
-                    "ending": "Orang Bijaksana",
-                    "type": "good"
-                },
-
-                "gunung_kawasan": {
-                    "text": "🏔️ GUNUNG KAWASAN TERJAL\n\nKowe mendaki gunung yang curam.\nPemandangan indah, tapi jalur berbahaya!\n\nTiba-tiba nemu dua jalan:\n- Jalan kiri: Menuju puncak\n- Jalan kanan: Menuju lembah tersembunyi",
-                    "choices": [
-                        {"text": "⬅️ Jalan kiri ke puncak", "next": "puncak_gunung"},
-                        {"text": "➡️ Jalan kanan ke lembah", "next": "lembah_tersembunyi"}
-                    ]
-                },
-
-                "puncak_gunung": {
-                    "text": "⛰️ PUNCAK GUNUNG MEGAH!\n\nDari puncak kowe liat pemandangan spektakuler!\nTernyata 'harta karun' adalah keindahan alam Jawa Timur!\n\nKowe jadi fotografer landscape terkenal!",
-                    "ending": "Fotografer Alam",
-                    "type": "good"
-                },
-
-                "lembah_tersembunyi": {
-                    "text": "🪨 LEMBAH TERSEMBUNYI AJAIB!\n\nKowe nemu lembah dengan air terjun dan bunga langka.\nIni adalah tempat meditasi para empu zaman dulu!\n\nKowe nemu kedamaian batin yang tak ternilai!",
-                    "ending": "Pencari Kedamaian",
+                    "text": "🌿 GOOD ENDING: ORANG BIJAKSANA!\n\nKakek tua di pondok mengajarkan filosofi hidup Jawa.\nKamu menemukan 'harta' dalam kebijaksanaan tradisional.\n\nKamu jadi sesepuh muda yang dihormati masyarakat!",
+                    "ending": "Orang Bijaksana", 
                     "type": "good"
                 }
             }

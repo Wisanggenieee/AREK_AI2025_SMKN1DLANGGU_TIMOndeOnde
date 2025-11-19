@@ -35,7 +35,11 @@ class Petualangan:
                     self.show_ending(scene, adventure_path)
                     break
                 
-                # Tampilkan pilihan
+                # Tampilkan pilihan jika ada
+                if "choices" not in scene or not scene["choices"]:
+                    print("❌ Tidak ada pilihan yang tersedia!")
+                    break
+                    
                 print("\n🎯 Pilihan sampeyan:")
                 for i, choice in enumerate(scene["choices"], 1):
                     print(f"   {i}. {choice['text']}")
@@ -49,13 +53,23 @@ class Petualangan:
                             
                         pilihan_idx = int(pilihan) - 1
                         if 0 <= pilihan_idx < len(scene["choices"]):
-                            current_scene = scene["choices"][pilihan_idx]["next"]
-                            adventure_path.append(scene["choices"][pilihan_idx]["text"])
+                            next_scene = scene["choices"][pilihan_idx]["next"]
+                            
+                            # Cek apakah scene berikutnya ada
+                            if next_scene not in petualangan_data["scenes"]:
+                                print(f"❌ Scene '{next_scene}' tidak ditemukan! Kembali ke awal.")
+                                current_scene = "start"
+                            else:
+                                current_scene = next_scene
+                                adventure_path.append(scene["choices"][pilihan_idx]["text"])
                             break
                         else:
                             print("❌ Pilihan tidak valid! Coba lagi.")
                     except ValueError:
                         print("❌ Masukkan angka saja!")
+                    except KeyboardInterrupt:
+                        print("\n\n⚠️ Petualangan dihentikan...")
+                        return
             
             # Simpan progress petualangan
             user_data = self.json_manager.load_current_user()
@@ -64,13 +78,15 @@ class Petualangan:
                     "status": "selesai",
                     "ending": adventure_path[-1] if adventure_path else "Belum selesai",
                     "path": adventure_path,
-                    "jenis_ending": scene.get("type", "unknown")
+                    "jenis_ending": scene.get("type", "unknown") if 'scene' in locals() else "unknown"
                 }
                 self.json_manager.save_user_data(user_data)
                 print("\n💾 Progress petualangan berhasil disimpan!")
                 
         except Exception as e:
             print(f"❌ Error di petualangan: {e}")
+            import traceback
+            traceback.print_exc()
         
         input("\nTekan Enter untuk kembali ke menu...")
     
@@ -83,7 +99,18 @@ class Petualangan:
         ending_type = scene.get("type", "good")
         ending_emoji = self.get_ending_emoji(ending_type)
         
-        print(f"\n{ending_emoji} ENDING: {scene['ending']}")
+        # Tampilkan jenis ending sesuai permintaan
+        ending_labels = {
+            "good": "GOOD ENDING",
+            "bad": "BAD ENDING", 
+            "funny": "FUNNY ENDING",
+            "secret": "SECRET ENDING",
+            "neutral": "NEUTRAL ENDING"
+        }
+        
+        ending_label = ending_labels.get(ending_type, "ENDING")
+        
+        print(f"\n{ending_emoji} {ending_label}: {scene['ending']}")
         print(f"📖 {scene['text']}")
         
         print(f"\n🗺️ Perjalanan sampeyan:")
